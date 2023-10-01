@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+ <select onchange="color(this.value)">
+        <option value="">Color</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+        <option value="pink">Pink</option>
+        <option value="black">Black</option>
+   </select>
+  <script>
+    function color(selectedColor) {
+      var paragraphs = document.getElementsByTagName("p");
+      for (var i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.backgroundColor = selectedColor;
+      }
+    }
+  </script>
+  <p>w3resource JavaScript Exercises</p>
+  <p>w3resource PHP Exercises</p>
+</body>
+</html> 
